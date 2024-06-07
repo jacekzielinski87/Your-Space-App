@@ -35,8 +35,8 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div className="bg-[url('src/assets/spaceBg.jpg')] h-screen flex justify-center items-center">
-    <form className=" text-slate-100 bg-zinc-900 opacity-90  w-2/4 h-1/2 text-xl rounded-xl p-4 grid gap-2 shadow-lg" onSubmit={handleSubmit}>
+    <div className="bg-[url('src/assets/AwesomeBg.jpg')] h-screen items-center">
+    <form className=" text-slate-100 w-2/4 h-1/2 text-2xl grid gap-6 mx-24 py-24" onSubmit={handleSubmit}>
       <div>
         <FontAwesomeIcon icon={faPerson} className='text-slate-100'/>
         <label className='m-2' htmlFor="username">Username:</label>
