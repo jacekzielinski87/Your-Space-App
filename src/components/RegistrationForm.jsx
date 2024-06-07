@@ -85,7 +85,7 @@ const RegistrationForm = () => {
           required
         />
       </div>
-      <p className='text-2xl flex justify-end bg-red-500 rounded-lg w-1/3 h-12 p-1 '>You don't have an account ?</p>
+      <p className='text-2xl flex justify-end bg-red-500 rounded-lg w-1/3 h-12 p-2'>You don't have an account ?</p>
       <button className='text-2xl flex p-2 w-40 h-12 rounded-lg bg-green-600' type="submit"> Register now</button>
     </form>
     </div>
