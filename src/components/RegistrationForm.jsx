@@ -35,11 +35,11 @@ const RegistrationForm = () => {
 
   return (
     <div className="bg-[url('src/assets/spaceBg.jpg')] h-screen flex justify-center items-center">
-    <form className=" text-slate-500 bg-slate-100 w-1/3 h-1/3 text-1xl mt-24 rounded-xl p-6 items-center" onSubmit={handleSubmit}>
+    <form className=" text-slate-500 bg-slate-100 w-1/3 h-1/3 text-1xl mt-24 rounded-xl p-12 " onSubmit={handleSubmit}>
       <div>
-        <FontAwesomeIcon icon={faPerson} />
+        <FontAwesomeIcon icon={faPerson} className='mr-4' />
         <label htmlFor="username">Username:</label>
-        <input
+        <input className='m-2'
           type="text"
           id="username"
           name="username"
@@ -49,9 +49,9 @@ const RegistrationForm = () => {
         />
       </div>
       <div>
-        <FontAwesomeIcon icon ={faEnvelope}/>
+        <FontAwesomeIcon icon ={faEnvelope} className='mr-4'/>
         <label htmlFor="email">Email:</label>
-        <input
+        <input className='m-2'
           type="email"
           id="email"
           name="email"
@@ -61,9 +61,9 @@ const RegistrationForm = () => {
         />
       </div>
       <div>
-        <FontAwesomeIcon icon={faLock} /> 
+        <FontAwesomeIcon icon={faLock} className='mr-4' /> 
         <label htmlFor="password">Password:</label>
-        <input
+        <input className='m-2'
           type="password"
           id="password"
           name="password"
@@ -74,7 +74,7 @@ const RegistrationForm = () => {
       </div>
       <div>
         <label htmlFor="confirmPassword">Confirm Password:</label>
-        <input
+        <input className='m-2'
           type="password"
           id="confirmPassword"
           name="confirmPassword"
@@ -83,7 +83,7 @@ const RegistrationForm = () => {
           required
         />
       </div>
-      <button type="submit">Register</button>
+      <button className='my-6' type="submit">Register</button>
     </form>
     </div>
   );
