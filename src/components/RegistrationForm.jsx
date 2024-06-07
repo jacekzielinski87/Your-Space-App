@@ -1,8 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faEnvelope, faLock, faPerson} from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faLock, faPerson, faSquareCheck} from '@fortawesome/free-solid-svg-icons';
 
 
-// src/RegistrationForm.js
+
 
 import { useState } from 'react';
 
@@ -35,11 +36,11 @@ const RegistrationForm = () => {
 
   return (
     <div className="bg-[url('src/assets/spaceBg.jpg')] h-screen flex justify-center items-center">
-    <form className=" text-slate-500 bg-slate-100 w-1/3 h-1/3 text-1xl mt-24 rounded-xl p-12 " onSubmit={handleSubmit}>
+    <form className=" text-slate-100 bg-slate-800 opacity-90  w-2/4 h-1/2 text-xl rounded-xl p-4 grid gap-2 shadow-lg" onSubmit={handleSubmit}>
       <div>
-        <FontAwesomeIcon icon={faPerson} className='mr-4' />
-        <label htmlFor="username">Username:</label>
-        <input className='m-2'
+        <FontAwesomeIcon icon={faPerson} className='text-slate-100'/>
+        <label className='m-2' htmlFor="username">Username:</label>
+        <input className='w-1/3 rounded-xl flex' 
           type="text"
           id="username"
           name="username"
@@ -49,9 +50,9 @@ const RegistrationForm = () => {
         />
       </div>
       <div>
-        <FontAwesomeIcon icon ={faEnvelope} className='mr-4'/>
-        <label htmlFor="email">Email:</label>
-        <input className='m-2'
+        <FontAwesomeIcon icon ={faEnvelope} />
+        <label className='m-2' htmlFor="email">Email:</label>
+        <input className='w-1/3 rounded-xl flex' 
           type="email"
           id="email"
           name="email"
@@ -61,9 +62,9 @@ const RegistrationForm = () => {
         />
       </div>
       <div>
-        <FontAwesomeIcon icon={faLock} className='mr-4' /> 
-        <label htmlFor="password">Password:</label>
-        <input className='m-2'
+        <FontAwesomeIcon icon={faLock}  /> 
+        <label className='m-2' htmlFor="password">Password:</label>
+        <input className='w-1/3 rounded-xl flex' 
           type="password"
           id="password"
           name="password"
@@ -73,8 +74,9 @@ const RegistrationForm = () => {
         />
       </div>
       <div>
-        <label htmlFor="confirmPassword">Confirm Password:</label>
-        <input className='m-2'
+        <FontAwesomeIcon icon={faSquareCheck} />
+        <label className='m-2' htmlFor="confirmPassword">Confirm Password:</label>
+        <input className='w-1/3 rounded-xl flex ' 
           type="password"
           id="confirmPassword"
           name="confirmPassword"
@@ -83,7 +85,8 @@ const RegistrationForm = () => {
           required
         />
       </div>
-      <button className='my-6' type="submit">Register</button>
+      <p className='text-2xl flex justify-end bg-red-500 rounded-lg w-1/3 h-12 p-1 '>You don't have an account ?</p>
+      <button className='text-2xl flex p-2 w-40 h-12 rounded-lg bg-green-600' type="submit"> Register now</button>
     </form>
     </div>
   );
