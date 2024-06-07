@@ -7,7 +7,7 @@ import { faEnvelope, faLock, faPerson, faSquareCheck} from '@fortawesome/free-so
 
 import { useState } from 'react';
 
-const RegistrationForm = () => {
+function RegistrationForm ()  {
   const [formData, setFormData] = useState({
     username: '',
     email: '',
@@ -89,28 +89,10 @@ const RegistrationForm = () => {
       <button className='text-2xl flex p-2 w-40 h-12 rounded-lg bg-green-600' type="submit"> Register now</button>
     </form>
     </div>
-  );
-};
+  )
+}
 
 export default RegistrationForm;
 
-
-/*function RegistrationForm() {
-    return (
-        <div className="bg-[url('src/assets/spaceBg.jpg')] h-screen flex justify-center items-center">
-           <form className=" text-slate-500 bg-slate-100 w-1/3 h-1/3 pt-10 grid text-4xl mt-24 rounded-xl font-extra p-14 items-center">
-            
-            
-            
-            </form>
-            <p className='text-slate-200 text-8xl w-1/2 p-6 text-center font-family-roboto'>CREATE YOUR OWN SPACE</p>
-            
-        </div>
-        
-        
-    )
-}
-
-export default RegistrationForm;*/
 
 
