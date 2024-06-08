@@ -1,4 +1,5 @@
-import RegistrationForm from "./components/RegistrationForm";
+//import RegistrationForm from "./components/RegistrationForm";
+import Home from "./pages/Home"
 
 
 
@@ -6,7 +7,7 @@ function App() {
   
   return (
     <>
-      <RegistrationForm/>
+      <Home/>
     </>
   )
 }
