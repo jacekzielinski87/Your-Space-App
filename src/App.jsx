@@ -1,14 +1,27 @@
-import Home from "./pages/Home"
+import Home from "./pages/Home";
+import Works from "./pages/Works";
+import People from "./pages/People";
+import Profile from "./components/Profile";
+import {Routes, Route, BrowserRouter} from 'react-router-dom';
+
+
 
 
 
 function App() {
   
   return (
-    <>
-      <Home/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element = {<Home/>}/>
+        <Route path="works" element = {<Works/>}/>
+        <Route path="people" element = {<People/>}/>
+        <Route path="profile" element = {<Profile/>}/>
+      </Routes>
+    </BrowserRouter>
+    
   )
 }
+
 
 export default App
