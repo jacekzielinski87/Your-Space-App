@@ -6,7 +6,7 @@ function Works() {
     return (
         <div>
             <Menu/>
-            <h1>This is space for your work !</h1>
+            <h1>This is space for your works !</h1>
             <img src={Workspace} alt="workspace image"></img>
         </div>
     )

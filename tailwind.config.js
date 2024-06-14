@@ -8,7 +8,8 @@ export default {
   theme: {
     extend:{
       fontFamily:{
-        Dosis:["Dosis", "sans-serif"]
+        Dosis:["Dosis", "sans-serif"],
+        Rubik:["Rubik", "sans-serif"]
       }
     },
   },
