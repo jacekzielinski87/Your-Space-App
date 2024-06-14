@@ -10,7 +10,7 @@ function Menu() {
      return (
         <>
         <div className='flex justify-center'>
-            <img className='absolute left-12 top-2 ' src={Logo}></img>
+            <img className='absolute left-20 top-6 ' src={Logo}></img>
             <ul className=' text-slate-600 text-xl border rounded-full shadow-xl shadow-zinc-900/25 flex justify-center w-1/3 font-serif my-4'>
                 <li className='flex justify-center items-center gap-3  hover:bg-slate-200 rounded hover:rounded-2xl mx-4'>
                 <FontAwesomeIcon icon={faHouse}/>
