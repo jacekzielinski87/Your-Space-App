@@ -1,13 +1,11 @@
-import Menu from "./Menu";
+import Menu from "./Menu"
 
 
 function Profile() {
     return (
-        <div>
-            <Menu/>
-            <h1>Profile Card Section</h1>
-        </div>
+        <Menu/>
     )
 }
 
-export default Profile;
+export default Profile
+

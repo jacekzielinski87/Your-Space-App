@@ -6,9 +6,9 @@ import Turn from '../assets/Turn.jpg';
 
 function Works() {
     return (
-        <div className="m-8">
+        <div>
             <Menu/>
-            <div className="bg-slate-300/70 flex justify-center items-center">
+            <div className="bg-slate-300/70 flex justify-center items-center rounded-xl">
                 <img className="w-1/3 m-4 rounded-xl mx-12" src={Ideas} alt="workspace image"></img>
                 <img className=" w-1/3 m-4 rounded-xl shadow-xl" src={Workspace} alt="workspace image"></img>
             </div>
